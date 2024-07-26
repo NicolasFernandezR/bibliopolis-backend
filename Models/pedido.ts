@@ -1,7 +1,7 @@
 import { itemPedido } from "./itemPedido";
 import { Usuario } from "./usuario";
 
-export class pedido {
+export class Pedido {
     id: string;
     usuario: Usuario;
     fechaPedido: Date;

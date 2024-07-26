@@ -1,0 +1,52 @@
+### Registrar nuevo usuario
+POST http://localhost:3000/usuarios
+Content-Type: application/json
+
+{
+    "id": "b3f71c21-2f91-4b36-a9ab-4a8cdb8d91e2",
+    "nombre": "Juan Pérez",
+    "correoElectronico": "juan.perez@example.com",
+    "password": "password12",
+    "direccion": "Calle Falsa 123",
+    "historialPedidos": [
+    {
+        "id": "c7e3d78a-8f22-4b3b-9a57-72d1e589df29",
+        "usuario": {
+            "id": "b3f71c21-2f91-4b36-a9ab-4a8cdb8d91e2",
+            "nombre": "Juan Pérez",
+            "correoElectronico": "jadample.cl",
+            "password": "password123",
+            "direccion": "Calle Falsa 123",
+            "historialPedidos": []
+        },
+        "fechaPedido": "2024-07-25T12:00:00Z",
+        "estado": "pendiente",
+        "total": 50.00,
+        "items": [
+        {
+            "libro": {
+                "isbn": "978-3-16-148410-0",
+                "titulo": "El Principito",
+                "autor": "Antoine de Saint-Exupéry",
+                "editorial": "Editorial X",
+                "genero": "Ficción",
+                "precio": "15.00",
+                "descripcion": "Un pequeño príncipe de un asteroide...",
+                "imagen": "ruta/a/imagen1.jpg",
+                "stock": 100
+            },
+            "cantidad": 2
+        }
+        ]
+    }
+    ]
+}
+
+### obtener usuario por id
+GET http://localhost:3000/usuarios/3fcbd683-a41f-4be4-b90c-04bf05640a82
+
+### obtener todos los usuarios
+GET http://localhost:3000/usuarios
+
+### eliminar usuario por id
+DELETE http://localhost:3000/usuarios/346d5585-ff35-4b9c-8919-ddaf10fa0d98
