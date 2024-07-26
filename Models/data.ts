@@ -10,8 +10,8 @@ export const dataPedidos: Pedido[] = [];
 export const dataItemspedidos: itemPedido[] = [];
 
 // dataLibros
-dataLibros.push(new Libro(randomUUID(), 'El Principito', 'Antoine de Saint-Exupéry', 'Editorial X', 'Ficción', '15.00', 'Un pequeño príncipe de un asteroide...', 'ruta/a/imagen1.jpg', 100));
-dataLibros.push(new Libro(randomUUID(), '1984', 'George Orwell', 'Editorial Y', 'Distopía', '20.00', 'Una novela sobre un régimen totalitario...', 'ruta/a/imagen2.jpg', 50));
+dataLibros.push(new Libro('978-3-16-148410-0', 'El Principito', 'Antoine de Saint-Exupéry', 'Editorial X', 'Ficción', '15.00', 'Un pequeño príncipe de un asteroide...', 'ruta/a/imagen1.jpg', 100));
+dataLibros.push(new Libro('978-0-14-044926-6', '1984', 'George Orwell', 'Editorial Y', 'Distopía', '20.00', 'Una novela sobre un régimen totalitario...', 'ruta/a/imagen2.jpg', 50));
 
 // dataUsuario
 dataUsuario.push(new Usuario(randomUUID(), 'Juan Pérez', 'juan.perez@example.com', 'password123', 'Calle Falsa 123', []));

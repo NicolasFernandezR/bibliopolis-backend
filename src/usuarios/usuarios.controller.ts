@@ -12,7 +12,7 @@ export class UsuariosController {
     crearUsuario(@Body() usuario:Usuario, @Res() res:Response){
         const result: Usuario = this.userService.crearUsuario(usuario);
         if(!result) return res.status(404).json({ message : 'usuario ya se encuetra registrado'});
-        res.json({ message : 'usuario creado exitosamente'});
+        res.status(201).json({ message : 'usuario creado exitosamente'});
     }
 
     @Get(':id')
